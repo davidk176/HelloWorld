@@ -17,5 +17,5 @@
 # vendor/
 .idea
 target
-.iml
-.ist
+*.iml
+*.ist
