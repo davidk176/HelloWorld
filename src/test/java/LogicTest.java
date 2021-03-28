@@ -23,7 +23,6 @@ public class LogicTest {
     }
 
 
-
     @Fuzz
     public void test(int i, int number) {
         logic.insertNumber(i, number);
