@@ -22,6 +22,12 @@ public class LogicTest {
         logic = new Logic();
     }
 
+    @Fuzz
+    public void testCalc(int a, int b) {
+        double erg = logic.calc(a, b);
+        LOG.info("calc erg= " + erg);
+    }
+
 
     @Fuzz
     public void test(int i, int number) {

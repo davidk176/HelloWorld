@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class App {
 
+    Logic logic = new Logic();
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
@@ -18,5 +19,10 @@ public class App {
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         return String.format("Hello %s!", name);
+    }
+
+    @GetMapping("/calc")
+    public Double calc(@RequestParam(value = "a", defaultValue = "1") int a, @RequestParam(value = "b", defaultValue = "1") int b) {
+        return logic.calc(a, b);
     }
 }
