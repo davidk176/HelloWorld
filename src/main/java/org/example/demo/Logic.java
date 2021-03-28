@@ -11,8 +11,8 @@ public class Logic {
 
 
     public void insertNumber(int i, int number) {
-        LOG.info("a= " + i);
-        LOG.info("b= " + number);
+        LOG.info("i= " + i);
+        LOG.info("number= " + number);
         nums[i]=number;
     }
 }
