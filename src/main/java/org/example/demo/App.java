@@ -21,8 +21,5 @@ public class App {
         return String.format("Hello %s!", name);
     }
 
-    @GetMapping("/calc")
-    public Double calc(@RequestParam(value = "a", defaultValue = "1") int a, @RequestParam(value = "b", defaultValue = "1") int b) {
-        return logic.calc(a, b);
-    }
+
 }
